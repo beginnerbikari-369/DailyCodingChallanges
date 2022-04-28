@@ -17,4 +17,3 @@ def countWays(s, m):
 s=4
 m=2
 print("Number of ways =", countWays(s, m))
-
