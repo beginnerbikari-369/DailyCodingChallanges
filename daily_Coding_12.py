@@ -1,5 +1,4 @@
-# A program to count the number of ways
-# to reach n'th stair
+# A program to count the number of ways to reach n'th stair
 
 # Recursive function used by countWays
 def countWaysUtil(n, m):
@@ -15,9 +14,6 @@ def countWaysUtil(n, m):
 # Returns number of ways to reach s'th stair
 def countWays(s, m):
 	return countWaysUtil(s + 1, m)
-	
-
-# Driver program
-s, m = 4, 2
+s=4
+m=2
 print("Number of ways =", countWays(s, m))
-
