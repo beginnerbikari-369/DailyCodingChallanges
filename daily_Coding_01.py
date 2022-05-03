@@ -15,8 +15,8 @@ def checkIfSumIs(k, ls):
 
 
 if __name__ == "__main__":
-    ls = list(map(int, input(
-        "enter the space separated list values:").strip().split()))
+    ls = list(map(
+        int, input("enter the space separated list values:").strip().split()))
     k = int(input("enter the sum value:"))
     str = checkIfSumIs(k, ls)
     if(str is not None):
