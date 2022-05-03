@@ -1,0 +1,54 @@
+class Node:
+    def __init__(self,data,next=None):
+        self.data = data
+        self.next = next
+class LinkedList:
+    def __init__(self,root) :
+        self.root = root
+    def len(self):
+        temp = self.root
+        if temp is None:
+            return 0
+        count = 0
+        while(temp):
+            count+=1
+            temp = temp.next
+        return count
+    def removeKth(self,index):
+        count = 0
+        temp = self.root
+        if temp is None:
+            return None
+        elif temp.next is None and index == 1:
+            return None
+        else:
+            index = len()- index + 1
+            print("index=",index)
+            while(temp and count < self.len()):
+                count += 1
+                print(temp.data)
+                if count == index:
+                    if temp.next is None:
+                        temp = None
+                        return self.root
+                    print(count)
+                    print(temp.data,temp.next.data)
+                    temp = temp.next
+                    print(temp.data,temp.next.data)
+                    return root
+                temp =temp.next
+
+root = Node(10)
+l1=LinkedList(root)
+root.next = Node(20)
+root.next.next = Node(30)
+root.next.next.next = Node(40)
+root.next.next.next.next = Node(50)
+print(l1.len())
+
+l1.removeKth(1)
+print(root.data)
+print(root.next.data)
+print(root.next.next.data)
+print(root.next.next.next.data)
+print(root.next.next.next.next.data)
