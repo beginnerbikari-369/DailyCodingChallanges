@@ -27,12 +27,12 @@ def serialize(root):
 
 
 if __name__ == "__main__":
-    root = Node(10)
+    root = Node(30)
     root.left = Node(20)
-    root.right = Node(30)
-    root.left.left = Node(40)
-    root.right.right = Node(50)
-    root.right.right.left = Node(60)
+    root.right = Node(50)
+    root.left.left = Node(10)
+    root.right.right = Node(60)
+    root.right.right.left = Node(40)
     root.right.right.right = Node(70)
     ls = serialize(root)
     ls.sort()
